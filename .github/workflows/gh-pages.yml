@@ -33,7 +33,7 @@ jobs:
         with:
           node-version: "16.x"
           cache: 'yarn'
-      - run: yarn install --frozen-lock-file 
+      - run: yarn install --frozen-lockfile
       - run: yarn build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
